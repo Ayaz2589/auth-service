@@ -1,7 +1,17 @@
 node_modules
-# Keep environment variables out of version control
-.env
+
+# Terraform and AWS build artifacts
 .terraform/
 *.tfstate
 *.tfstate.backup
 .terraform.lock.hcl
+
+# Lambda deployment packages
+*.zip
+
+# Node build artifacts
+node_modules/
+dist/
+
+# Environment
+.env
